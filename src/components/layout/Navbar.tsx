@@ -21,14 +21,11 @@ export function Navbar() {
   }, []);
 
   return (
-    <header className={clsx(
-      "fixed top-0 inset-x-0 z-50 transition-all duration-300",
-      scrolled ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-[var(--border)]" : "bg-transparent"
-    )}>
+    <header className="fixed top-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-[var(--border)]">
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl font-display font-semibold tracking-tight text-[var(--primary-dark)]">Cerdak</span>
-          <span className="text-[11px] font-body font-medium text-[var(--muted)] mt-1 uppercase tracking-widest">France</span>
+          <span className="text-3xl font-display font-semibold tracking-tight text-[var(--primary-dark)]">Cerdak</span>
+          <span className="text-[11px] font-body font-medium text-[var(--muted)] mt-3 uppercase tracking-widest">France</span>
         </Link>
         <ul className="hidden md:flex items-center gap-8">
           {links.map((l) => (
