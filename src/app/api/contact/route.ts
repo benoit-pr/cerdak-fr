@@ -11,7 +11,7 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: "Cerdak France <noreply@cerdak.fr>",
       to: ["france@cerdak.com"],           // ← change to real recipient
-      replyTo: email,
+      reply_to: email,
       subject: `[Cerdak FR] Nouvelle demande — ${societe} (${type})`,
       html: `
         <h2>Nouvelle demande de partenariat</h2>
